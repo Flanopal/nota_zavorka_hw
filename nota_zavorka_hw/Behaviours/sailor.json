@@ -1,0 +1,266 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 93,
+			"width": 178
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"55ClcdLIotjUeW6qDcZwCcDe43TPGjvh": {
+			"height": 94,
+			"title": "store",
+			"width": 349,
+			"x": 917,
+			"y": 74
+		},
+		"9IuZBXe9uOdY5jng0aeJAlwVlfvYUEA7": {
+			"height": 93,
+			"title": "store",
+			"width": 180,
+			"x": 1016,
+			"y": -30
+		},
+		"Aun0l0xn1q75vvuK1CuGSGFyGzqzJ659": {
+			"height": 90,
+			"title": "Common.relativeMove",
+			"width": 226,
+			"x": 689,
+			"y": 60
+		},
+		"EnFyPalEaOcRD42ceTg2Es1gItw0jGn6": {
+			"height": 89,
+			"title": "Common.move",
+			"width": 225,
+			"x": 977,
+			"y": 239
+		},
+		"Lq0EPr5o5x5Xyf0JdwP8mniGqXd29IO5": {
+			"height": 157,
+			"title": "roleSplit",
+			"width": 232,
+			"x": 198,
+			"y": -22
+		},
+		"LrKh5FNEztXP3HJDP19kBnAM2c6dWjXb": {
+			"height": 61,
+			"title": "sequence",
+			"width": 143,
+			"x": 799,
+			"y": 249
+		},
+		"N3T7UjPJfApt0O61Ptp1itgwBeapn3wt": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 800,
+			"y": 193
+		},
+		"PJ5KgAmnZohoWBoe6NKCX1cr0MxZ7PiY": {
+			"height": 96,
+			"title": "store",
+			"width": 318,
+			"x": 688,
+			"y": -137
+		},
+		"TO6oBstSwZM4UVO7cEPsiANUFUPUkUB4": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 536,
+			"y": 180
+		},
+		"VbjHr9AOzFM68tbd7CjsC9zhGaulirKS": {
+			"height": 92,
+			"title": "store",
+			"width": 190,
+			"x": 1195,
+			"y": -20
+		},
+		"ndA6iS9qi8tPhIrLZWYjdJc9gDiIsaH6": {
+			"height": 94,
+			"title": "store",
+			"width": 306,
+			"x": 686,
+			"y": -37
+		},
+		"tE2aiTKOOFCpHCTsFDtHdq5d3vDaufWQ": {
+			"height": 94,
+			"title": "store",
+			"width": 322,
+			"x": 1009,
+			"y": -132
+		},
+		"xk6ZgFqFvbp77pT1yK0HHtc7NW0Hgpro": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 471,
+			"y": -90
+		}
+	},
+	"roles": [ {
+		"categories": [ "nota_zavorka_hw.bcomRole" ],
+		"name": "bcom"
+	}, {
+		"categories": [],
+		"name": "default"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "PJ5KgAmnZohoWBoe6NKCX1cr0MxZ7PiY",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "dx"
+				}, {
+					"name": "value",
+					"value": "nota_zavorka_hw.Wind().dirX"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "tE2aiTKOOFCpHCTsFDtHdq5d3vDaufWQ",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "dz"
+				}, {
+					"name": "value",
+					"value": "nota_zavorka_hw.Wind().dirZ"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "ndA6iS9qi8tPhIrLZWYjdJc9gDiIsaH6",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "pos"
+				}, {
+					"name": "value",
+					"value": "nota_zavorka_hw.Position(units[1])"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "9IuZBXe9uOdY5jng0aeJAlwVlfvYUEA7",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "newX"
+				}, {
+					"name": "value",
+					"value": "pos.x+dx*10"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "VbjHr9AOzFM68tbd7CjsC9zhGaulirKS",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "newZ"
+				}, {
+					"name": "value",
+					"value": "pos.z+dz*10"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "Aun0l0xn1q75vvuK1CuGSGFyGzqzJ659",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "dist",
+					"value": "{x = dx*20, z = dz*20}"
+				}, {
+					"name": "fight",
+					"value": "false"
+				}, {
+					"name": "scriptName",
+					"value": "Common.relativeMove"
+				} ],
+				"scriptName": "Common.relativeMove"
+			}, {
+				"children": [],
+				"id": "55ClcdLIotjUeW6qDcZwCcDe43TPGjvh",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "someVar"
+				}, {
+					"name": "value",
+					"value": "nota_zavorka_hw.DrawDir(dx*20,dz*20)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			} ],
+			"id": "xk6ZgFqFvbp77pT1yK0HHtc7NW0Hgpro",
+			"nodeType": "sequence",
+			"parameters": []
+		}, {
+			"children": [ {
+				"children": [],
+				"id": "N3T7UjPJfApt0O61Ptp1itgwBeapn3wt",
+				"nodeType": "success",
+				"parameters": []
+			}, {
+				"children": [ {
+					"children": [],
+					"id": "EnFyPalEaOcRD42ceTg2Es1gItw0jGn6",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "pos",
+						"value": "{x = newX, z = newZ}"
+					}, {
+						"name": "fight",
+						"value": "false"
+					}, {
+						"name": "scriptName",
+						"value": "Common.move"
+					} ],
+					"scriptName": "Common.move"
+				} ],
+				"id": "LrKh5FNEztXP3HJDP19kBnAM2c6dWjXb",
+				"nodeType": "sequence",
+				"parameters": []
+			} ],
+			"id": "TO6oBstSwZM4UVO7cEPsiANUFUPUkUB4",
+			"nodeType": "luaCondition",
+			"parameters": [ {
+				"name": "expression",
+				"value": "newX==nil"
+			}, {
+				"name": "repeat",
+				"value": "false"
+			} ]
+		} ],
+		"id": "Lq0EPr5o5x5Xyf0JdwP8mniGqXd29IO5",
+		"nodeType": "roleSplit",
+		"parameters": [ {
+			"name": "mode",
+			"value": "all-success"
+		} ]
+	}
+}

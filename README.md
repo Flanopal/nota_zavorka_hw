@@ -1,1 +1,0 @@
-# nota_zavorka_hw
